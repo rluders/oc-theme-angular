@@ -8,19 +8,12 @@ description = "Angular Application Layout"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ this.page.title }}</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ 'app/assets/favicon.ico'|theme }}'">
 </head>
 
 <body>
     <app-root>
-        <div id="spinner">
-            <div class="cssload-thecube">
-                <div class="cssload-cube cssload-c1"></div>
-                <div class="cssload-cube cssload-c2"></div>
-                <div class="cssload-cube cssload-c4"></div>
-                <div class="cssload-cube cssload-c3"></div>
-            </div>
-        </div>
+        Loading...
     </app-root>
 
     <script type="text/javascript" src="{{ 'app/inline.bundle.js'|theme }}"></script>
