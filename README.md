@@ -5,8 +5,8 @@
 
 ### OctoberCMS
 
-* [RLuders.JWTAuth]()
-* [RainLab.User]()
+* [RLuders.JWTAuth](https://octobercms.com/plugin/rluders-jwtauth)
+* [RainLab.User](https://octobercms.com/plugin/rainlab-user)
 
 ### Angular2
 
