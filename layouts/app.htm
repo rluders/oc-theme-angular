@@ -1,0 +1,33 @@
+description = "Angular Application Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ this.page.title }}</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <app-root>
+        <div id="spinner">
+            <div class="cssload-thecube">
+                <div class="cssload-cube cssload-c1"></div>
+                <div class="cssload-cube cssload-c2"></div>
+                <div class="cssload-cube cssload-c4"></div>
+                <div class="cssload-cube cssload-c3"></div>
+            </div>
+        </div>
+    </app-root>
+
+    <script type="text/javascript" src="{{ 'app/inline.bundle.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/polyfills.bundle.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/styles.bundle.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/vendor.bundle.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/main.bundle.js'|theme }}"></script>
+</body>
+
+</html>
