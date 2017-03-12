@@ -1,14 +1,12 @@
-name: Angular2
-code: angular2
-description: Angular2 Theme
-author: Ricardo Lüders <ricardo@luders.com.br>
-authorUrl: 'http://www.luders.com.br/'
-
-# [...]
-
+name: 'Angular 2 Skeleton'
+description: 'The skeleton theme for Angular 2 applications.'
+author: 'Ricardo Lüders <ricardo@luders.com.br>'
+homepage: ''
+code: angular2skeleton
+authorUrl: 'https://github.com/rluders/oc-theme-angular2'
 form:
     fields:
         site_name:
-            label: Site name
-            comment: The website name as it should appear on the front-end
-            default: Angular2 Website
+            label: 'Site name'
+            comment: 'The website name as it should appear on the front-end'
+            default: 'Angular 2 Skeleton Application'
