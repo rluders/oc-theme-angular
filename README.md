@@ -24,7 +24,7 @@ To:
 
 Also, for security reasons, you'll need to add the following lines at the the **Block all PHP files, except index** section:   
 
-`RewriteRule ^([0-9]+.chunk.js)$ /themes/angular2/app/$1 [R,L]`    
+`RewriteRule ^([0-9]+.chunk.js)$ /themes/rluders-angular2/app/$1 [R,L]`    
 `RewriteRule ^(themes/.*/app/index.html) - [F,L,NC]`
 
 It'll prevent the users to access the **themes/(theme)/app/index.html** and redirect the chunk files. Not that'll be a problem, but it's not nice.
@@ -42,5 +42,11 @@ An example, to build your application and keep it in the watcher:
 After that, you'll notice that we created an `./app` folder on your theme root. It's means that your angular application is compiled and, for now, everything is file.
 
 You'll never need to change nothing insite the `./app` folder. 'Cause it's gonna be created for our angular-cli command. All yours implementation'll happend inside the `./angular/src` folder, as a normal `angular-cli` generated application.
+
+Don't forget to download the dependencies inside the `./angular` folder. I recommend that you use `yarn` dependency manager, It's better than `npm`.
+
+To download the angular dependencies you can use:
+
+`yarn install` or `npm install`
 
 If you have any problems or questions, feel free to ask for help.
