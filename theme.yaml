@@ -2,7 +2,7 @@ name: 'Angular skeleton'
 description: 'The skeleton theme for Angular applications.'
 author: 'Ricardo Lüders <ricardo@luders.com.br>'
 homepage: ''
-code: angular2skeleton
+code: angular2
 authorUrl: 'https://github.com/rluders/oc-theme-angular2'
 form:
     fields:
