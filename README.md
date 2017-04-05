@@ -49,4 +49,6 @@ To download the angular dependencies you can use:
 
 `yarn install` or `npm install`
 
+Also, It's necessary to rename the file `example.angular-cli.json` to `.angular-cli.json`, 'cause October Theme Package cannot have hidden files.
+
 If you have any problems or questions, feel free to ask for help.
