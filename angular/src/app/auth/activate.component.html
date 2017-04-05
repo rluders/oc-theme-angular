@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h1>Activate your account</h1>
+
+            <form novali (ngSubmit)="onSubmit(user)" [formGroup]="user">
+                <div class="form-group">
+                    <label for="activation_code">Your activation code</label>
+                    <input type="text" class="form-control" formControlName="activation_code" id="activation_code">
+                </div>
+                <div class="form-group">
+                    <button [disabled]="user.invalid" type="submit" class="btn btn-default btn-block text-left">
+                        Confirm
+                    </button>
+                </div>
+                <div class="form-group">
+                    <a [routerLink]="['/auth/login']">Back to login.</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>

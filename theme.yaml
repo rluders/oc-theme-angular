@@ -1,5 +1,5 @@
-name: 'Angular 2 Skeleton'
-description: 'The skeleton theme for Angular 2 applications.'
+name: 'Angular skeleton'
+description: 'The skeleton theme for Angular applications.'
 author: 'Ricardo Lüders <ricardo@luders.com.br>'
 homepage: ''
 code: angular2skeleton
@@ -9,4 +9,4 @@ form:
         site_name:
             label: 'Site name'
             comment: 'The website name as it should appear on the front-end'
-            default: 'Angular 2 Skeleton Application'
+            default: 'Angular skeleton application'

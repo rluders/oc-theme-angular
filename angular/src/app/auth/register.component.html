@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h1>Register</h1>
+
+            <form novali (ngSubmit)="onSubmit(user)" [formGroup]="user">
+              <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" formControlName="username" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" formControlName="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="password_confirmation">Repeat the password</label>
+                    <input type="password" class="form-control" formControlName="password_confirmation" id="password_confirmation">
+                </div>
+                <div class="form-group">
+                    <button [disabled]="user.invalid" type="submit" class="btn btn-default btn-block text-left">
+                        Confirm
+                    </button>
+                </div>
+                <div class="form-group">
+                    <a [routerLink]="['/auth/login']">Back to login.</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h1>Login</h1>
+
+            <form novalidate (ngSubmit)="onSubmit(credentials)" [formGroup]="credentials">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="password">
+                </div>
+                <div class="form-group">
+                    <button [disabled]="credentials.invalid" type="submit" class="btn btn-default btn-block text-left">
+                        Login
+                    </button>
+                </div>
+                <div class="form-group">
+                    You are new? <a [routerLink]="['/auth/register']">Create an account</a>. <br>
+                    <a [routerLink]="['/auth/forgot-password']">Forgot your password?</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
