@@ -3,3 +3,4 @@
 1.0.2: Fix some bugs
 1.0.3: Angular-cli problem
 1.0.4: Adding angular-cli.json file
+1.0.5: Update dependencies (still on Angular 4 LTS)
