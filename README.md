@@ -1,14 +1,15 @@
-# Angular 2 Theme for OctoberCMS
+# Angular Theme for OctoberCMS
+
+This theme is using **Angular 4 LTS**.
 
 ## Requirements
-
 
 ### OctoberCMS
 
 * [RLuders.JWTAuth](https://octobercms.com/plugin/rluders-jwtauth)
 * [RainLab.User](https://octobercms.com/plugin/rainlab-user)
 
-### Angular2
+### Angular
 
 * [angular-cli](https://cli.angular.io/)
 
