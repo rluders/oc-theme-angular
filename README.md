@@ -50,3 +50,8 @@ To download the angular dependencies you can use:
 `yarn install` or `npm install`
 
 If you have any problems or questions, feel free to ask for help.
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/rluders/oc-theme-angular2/badge.svg?style=beer-square)](https://beerpay.io/rluders/oc-theme-angular2)  [![Beerpay](https://beerpay.io/rluders/oc-theme-angular2/make-wish.svg?style=flat-square)](https://beerpay.io/rluders/oc-theme-angular2?focus=wish)
