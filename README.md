@@ -34,7 +34,7 @@ It'll prevent the users to access the **themes/(theme)/app/index.html** and redi
 
 We are talking about advanced theme development. So, there's no easy way to do it. You'll keep in mind that it's necessary to learn how [angular-cli](https://cli.angular.io/) works and also, sometimes execute it's commands to build your application.
 
-For now, what you need to know is that yout angular application is inside the `./angular` folder, inside your theme. And all your `angular-cli` commands will start from there.
+For now, what you need to know is that your angular application is inside the `./angular` folder, inside your theme folder. And all your `angular-cli` commands will start from there.
 
 An example, to build your application and keep it in the watcher:
 
