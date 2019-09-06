@@ -23,7 +23,7 @@
     "angular2-jwt": "^0.1.28",
     "core-js": "^2.4.1",
     "ng2-cookies": "^1.0.4",
-    "rxjs": "^5.1.0",
+    "rxjs": "^6.5.3",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
+    "codelyzer": "~5.1.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",
