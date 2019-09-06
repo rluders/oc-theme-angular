@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:modern": "ng build --plugin ngx-build-modern --prod",
+    "build:modern:angular": "ng build --plugin ngx-build-modern --project angular --prod"
   },
   "private": true,
   "dependencies": {
@@ -19,9 +21,11 @@
     "@angular/platform-browser": "^8.2.5",
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
-    "angular2-jwt": "^0.2.3",
+    "@auth0/angular-jwt": "^3.0.0",
     "core-js": "^3.2.1",
     "ng2-cookies": "^1.0.12",
+    "ngx-build-modern": "^1.1.10",
+    "ngx-build-plus": "^8.1.4",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -44,6 +48,7 @@
     "protractor": "~5.4.2",
     "ts-node": "~8.3.0",
     "tslint": "~5.19.0",
-    "typescript": "~3.6.2"
+    "typescript": "~3.5.3",
+    "webpack-assets-manifest": "^3.1.1"
   }
 }

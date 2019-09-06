@@ -3,6 +3,8 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "baseUrl": "",
+    "sourceMap": true,
+    "experimentalDecorators": true,
     "types": []
   },
   "exclude": [

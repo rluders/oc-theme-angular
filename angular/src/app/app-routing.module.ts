@@ -8,7 +8,7 @@ import { AuthGuardService } from './auth/auth-guard.service';
 import { FullLayoutComponent } from './layout/full-layout.component';
 import { AuthLayoutComponent } from './layout/auth-layout.component';
 
-export const routes : Routes = [
+export const routes: Routes = [
   {
     path: '',
     redirectTo: 'dashboard',
@@ -36,7 +36,7 @@ export const routes : Routes = [
         path: 'dashboard',
         data: {
           title: 'Dashboard',
-          description: 'Welcome to OctomerCMS + Angular2!'
+          description: 'Welcome to OctomerCMS + Angular8!'
         },
         children: [
           {

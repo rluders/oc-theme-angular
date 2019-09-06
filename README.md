@@ -1,6 +1,6 @@
 # Angular Theme for OctoberCMS
 
-This theme is using **Angular 4 LTS**.
+This theme is using **Angular 8 LTS**.
 
 ## Requirements
 
@@ -8,6 +8,31 @@ This theme is using **Angular 4 LTS**.
 
 * [RLuders.JWTAuth](https://octobercms.com/plugin/rluders-jwtauth)
 * [RainLab.User](https://octobercms.com/plugin/rainlab-user)
+* [Castiron Webpackmanifest](https://github.com/webdeveric/webpack-assets-manifest)
+
+Install **Castiron WebpackPhpManifest** package by issuing command: 
+
+`composer require castiron/webpackassets-plugin`
+
+in the root of your October CMS installation.
+
+Sometimes it appears in the installed packages list in Octobar backend, sometimes it doesn't.
+
+This package works in conjunction with the npm package `webpack-assets-manifest` which creates 
+a `manifest.json` file that tells the browser to load compiled chunks when working in production mode
+
+Production mode can be set in newer versions of October by editing `/config/environment.php` file 
+and changing from `'dev'` to `'prod'` in the `'hosts'` array, depending on your host.
+The other way to switch from development to production environment is by creating a `.env` file in the root of your October CMS installation, as per instructions on 
+[this page](https://octobercms.com/docs/setup/configuration).
+
+Production version of the application is built by issuing a command
+
+`ng build --prod --extraWebPackConfig webpack.partial.js` 
+
+in the `./angular` folder of the theme. 
+
+The whole Angular installation is adapted so it can run both in the root or in a subdirectory of your server.
 
 ### Angular
 

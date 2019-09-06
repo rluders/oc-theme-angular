@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { Http, RequestOptions } from '@angular/http';
 
-import { authHttpServiceFactory } from './auth.factory';
-import { AuthHttp } from 'angular2-jwt';
+// import { AuthHttp } from '@auth0/angular-jwt';
 import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 
@@ -18,7 +16,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 @NgModule({
   imports: [
     AuthRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   declarations: [
     LoginComponent,
@@ -28,11 +26,6 @@ import { AuthRoutingModule } from './auth-routing.module';
     ActivateComponent
   ],
   providers: [
-    {
-      provide: AuthHttp,
-      useFactory: authHttpServiceFactory,
-      deps: [Http, RequestOptions]
-    },
     AuthService,
     AuthGuardService
   ]
