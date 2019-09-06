@@ -23,7 +23,7 @@ export const routes : Routes = [
     children: [
       {
         path: '',
-        loadChildren: 'app/auth/auth.module#AuthModule'
+        loadChildren: () => import('app/auth/auth.module').then(m => m.AuthModule)
       }
     ]
   },
@@ -41,7 +41,7 @@ export const routes : Routes = [
         children: [
           {
             path: '',
-            loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
+            loadChildren: () => import('app/dashboard/dashboard.module').then(m => m.DashboardModule)
           }
         ]
       }
