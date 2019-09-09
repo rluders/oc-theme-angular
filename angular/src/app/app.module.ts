@@ -11,7 +11,6 @@ import { AuthModule } from './auth/auth.module';
 
 // JWT Auth modules
 import { JwtModule } from '@auth0/angular-jwt';
-// import { JwtOptionsFactory } from './auth/jwt-options.factory';
 
 // Components
 import { AppComponent } from './app.component';
@@ -29,10 +28,6 @@ import { AppComponent } from './app.component';
     AuthModule,
     // Jwt Token Injection
     JwtModule.forRoot({
-      /* jwtOptionsProvider: {
-          provide: JWT_OPTIONS,
-          useClass: JwtOptionsFactory,
-      } */
       config: {
         tokenGetter: jwtTokenGetter
       }
