@@ -22,22 +22,24 @@ export class AuthService {
   }
 
   loggedIn() {
-    return this.jwtHelper.isTokenExpired();
+    if (this.getToken()) {
+      return !this.jwtHelper.isTokenExpired();
+    }
+    return false;
   }
 
   login(credentials) {
     const url = `${this.authUrl}/login`;
     return this.http.post(url, JSON.stringify(credentials), { headers: this.headers }).pipe(
       map((response: any) => {
-        /* let token = response.json() && response.json().token;
-        let user = response.json() && response.json().user; */
-        const token = response.token;
 
-        // if (token && user) {
-        if (token) {
+        const token = response.token;
+        const user = response.user;
+
+        if (token && user) {
           this.token = token;
 
-          // localStorage.setItem('user', JSON.stringify(user));
+          localStorage.setItem('user', JSON.stringify(user));
           localStorage.setItem('access_token', token);
 
           return true;
@@ -49,6 +51,7 @@ export class AuthService {
 
   logout() {
     this.token = null;
+    localStorage.removeItem('user');
     localStorage.removeItem('access_token');
   }
 
