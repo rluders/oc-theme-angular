@@ -1,26 +1,46 @@
 description = "Angular Application Layout"
+
+[webpackAssets]
+publicFolder = themes/oc-theme-angular
+assetsFolder = app
+
+==
+<?php
+    function onStart(){
+        $this['baseurl'] = url('/') . '/';
+    }
+?>
 ==
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <base href="/">
+    <base href="{{ baseurl }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ this.page.title }}</title>
     <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon.ico'|theme }}">
+    {% if this.environment == 'prod' %}
+        {{ webpackAssets.tag('styles.css') | raw }}
+    {% endif %}
 </head>
 
 <body>
     <app-root>
-        Loading...
+        Loading... 
     </app-root>
 
-    <script type="text/javascript" src="{{ 'app/inline.bundle.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'app/polyfills.bundle.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'app/styles.bundle.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'app/vendor.bundle.js'|theme }}"></script>
-    <script type="text/javascript" src="{{ 'app/main.bundle.js'|theme }}"></script>
+    {% if this.environment == 'dev' %}
+    <script type="text/javascript" src="{{ 'app/polyfills.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/runtime.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/styles.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/vendor.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'app/main.js'|theme }}"></script>
+    {% elseif this.environment == 'prod' %}
+        {{ webpackAssets.tag('runtime.js') | raw }}
+        {{ webpackAssets.tag('polyfills.js') | raw }}
+        {{ webpackAssets.tag('main.js') | raw }}
+    {% endif %}
 </body>
 
 </html>

@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     private authService: AuthService,
     private router: Router) {
       this.credentials = formBuilder.group({
-        'email': ['', Validators.required],
+        'login': ['', Validators.required],
         'password': ['', Validators.required]
       });
     }
@@ -27,11 +27,10 @@ export class LoginComponent implements OnInit {
   onSubmit({value, valid}: {value: Object, valid: boolean}) {
     this.authService.login(value)
       .subscribe(result => {
-        console.log(result);
         this.router.navigate(['/']);
       },
       (err) => {
-        console.log(err);
+        console.error(err);
       });
   }
 
