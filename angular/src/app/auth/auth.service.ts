@@ -61,17 +61,17 @@ export class AuthService {
   }
 
   activate(credentials) {
-    const url = `${this.authUrl}/account_activation`;
+    const url = `${this.authUrl}/account-activation`;
     return this.http.post(url, JSON.stringify(credentials), { headers: this.headers });
   }
 
   forgotPassword(credentials) {
-    const url = `${this.authUrl}/forgot_password`;
+    const url = `${this.authUrl}/forgot-password`;
     return this.http.post(url, JSON.stringify(credentials), { headers: this.headers });
   }
 
   resetPassword(credentials) {
-    const url = `${this.authUrl}/reset_password`;
+    const url = `${this.authUrl}/reset-password`;
     return this.http.post(url, JSON.stringify(credentials), { headers: this.headers });
   }
 
