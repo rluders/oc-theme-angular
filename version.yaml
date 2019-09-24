@@ -5,3 +5,4 @@
 1.0.4: Adding angular-cli.json file
 1.0.5: Update dependencies (still on Angular 4 LTS)
 2.0.0: Updated to Angular 8 LTS
+2.0.1: Fixing security issues related to the dependencies
