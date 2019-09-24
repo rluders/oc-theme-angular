@@ -17,8 +17,6 @@
   </a>
 </p>
 
-> ⚠️ **Warning**: This theme is outdated and it will be replaced by the one that now lives on the **develop** branch, that upgrades it to *Angular 8 LTS*. If you want to use it, be awared that it's not compatible with my JWTAuth plugin anymore, and you probably will need to make some adjusts before use it. As well, this theme has now some  vulnerabilities caused by some dependencies. If you really need to use it, I strongly recommend you to use the version that lives on **develop** branch, and please, report and issues. 
-
 ## Requirements
 
 This theme is using **Angular 8 LTS**.
