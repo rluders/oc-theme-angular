@@ -1,8 +1,25 @@
-# Angular Theme for OctoberCMS
+<p align="center">
+  <img src="https://github.com/rluders/oc-theme-angular/blob/master/assets/image.png" style="border:1px solid #ddd;width:auto;">
+</p>
 
-This theme is using **Angular 8 LTS**.
+<p align="center">
+  <a href="https://travis-ci.org/rluders/oc-theme-angular">
+    <img src="https://travis-ci.org/rluders/oc-theme-angular.svg?branch=master">
+  </a>
+  <a href="https://octobercms.com/theme/rluders-angular2">
+    <img src="https://img.shields.io/badge/OctoberCMS-Theme-%23EE7203.svg">
+  </a>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2FHDXT4QTD7RA&source=url">
+    <img src="https://img.shields.io/badge/Donate-PayPal-green.svg">
+  </a>
+  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+    <img src="https://img.shields.io/github/license/rluders/oc-theme-angular.svg">
+  </a>
+</p>
 
 ## Requirements
+
+This theme is using **Angular 8 LTS**.
 
 * [RLuders.JWTAuth](https://octobercms.com/plugin/rluders-jwtauth)
 * [RLuders.CORS](https://octobercms.com/plugin/rluders-cors)
@@ -96,8 +113,12 @@ To download the angular dependencies you can use:
 
 If you have any problems or questions, feel free to ask for help.
 
-## Support
 
-If you like my job and you want to support it, please, consider to support me.
+# Known issues
 
-[![Beerpay](https://beerpay.io/rluders/oc-theme-angular2/badge.svg?style=beer-square)](https://beerpay.io/rluders/oc-theme-angular2)  [![Beerpay](https://beerpay.io/rluders/oc-theme-angular2/make-wish.svg?style=flat-square)](https://beerpay.io/rluders/oc-theme-angular2?focus=wish)
+Beside the fact that I'm always trying to solve the possible issues, bad things could happen.
+If you find anything and you need help, or you know how to solve it, please, feel free to submit a hotfix or even add the workaround to this README file.
+
+# License
+
+MIT
