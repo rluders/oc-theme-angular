@@ -1,8 +1,8 @@
-name: 'Angular skeleton'
+name: 'Angular Skeleton'
 description: 'The skeleton theme for Angular applications.'
 author: 'Ricardo Lüders <ricardo@luders.com.br>'
 homepage: ''
-code: angular
+code: oc-theme-angular
 authorUrl: 'https://github.com/rluders/oc-theme-angular'
 form:
     fields:
