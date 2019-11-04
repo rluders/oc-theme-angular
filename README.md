@@ -43,7 +43,7 @@ $ cd <path-to-octobercms-root>
 $ composer require castiron/webpackassets-plugin
 ```
 
-Sometimes it appears in the installed packages list in Octobar backend, sometimes it doesn't.
+Sometimes it appears in the installed packages list in October backend, sometimes it doesn't.
 
 This package works in conjunction with the npm package `webpack-assets-manifest` which creates
 a `manifest.json` file that tells the browser to load compiled chunks when working in production mode.
