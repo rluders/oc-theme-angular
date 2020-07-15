@@ -3,18 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/rluders/oc-theme-angular">
-    <img src="https://travis-ci.org/rluders/oc-theme-angular.svg?branch=master">
-  </a>
   <a href="https://octobercms.com/theme/rluders-angular2">
     <img src="https://img.shields.io/badge/OctoberCMS-Theme-%23EE7203.svg">
   </a>
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2FHDXT4QTD7RA&source=url">
     <img src="https://img.shields.io/badge/Donate-PayPal-green.svg">
-  </a>
-  <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-    <img src="https://img.shields.io/github/license/rluders/oc-theme-angular.svg">
-  </a>
+  </a>  
+  <img alt="GitHub" src="https://img.shields.io/github/license/rluders/oc-theme-angular">
 </p>
 
 ## Requirements
