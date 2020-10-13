@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/rluders/oc-theme-angular/blob/master/assets/image.png" style="border:1px solid #ddd;width:auto;">
+  <img src="https://github.com/rluders/oc-theme-angular/blob/main/assets/image.png" style="border:1px solid #ddd;width:auto;">
 </p>
 
 <p align="center">
